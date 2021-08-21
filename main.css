@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.changes {
+    background-color: chartreuse;
+    font-family: cursive;
+    color: deeppink;
+    font-size:30px;
+}

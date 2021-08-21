@@ -34,7 +34,65 @@ console.log(bookSib4.nextelementSibling);
 let bookMain = document.getElementById("parent");
 console.log(bookMain.parentElement);
 
-let bookMain2 = document.getElementById("parent");
+let bookMain2 = document.getElementById("parent"); // parentNode and parentElement work the same
 console.log(bookMain2.parentNode);
 
-// parentNode and parentElement work the same
+// adding css using dom
+
+// 1. individual property
+
+let para = document.getElementById("line");
+console.log(para);
+
+para.style.backgroundColor = "yellow";
+para.style.color ="red";
+
+
+// css text
+
+let paragraph = document.getElementById("session");
+console.log(paragraph);
+
+paragraph.style.cssText = "background-color: pink; color: red;"
+
+// adding classnames
+
+let set = document.getElementById("practice");
+console.log(set);
+
+set.classList.add("changes");
+
+// button
+
+function onFirstClick() {
+let psycho = document.getElementById("line");
+psycho.classList.add("changes");
+}
+
+
+function onNextClick() {
+    let psycho = document.getElementById("line");
+    psycho.classList.remove("changes");
+    }
+    
+
+// inner text
+
+let easy = document.getElementById("quote");
+console.log(easy.innerText);
+
+// text content
+
+console.log(easy.textContent);
+
+// inner HTML 
+
+console.log(easy.innerHTML);
+
+
+
+
+
+
+
+
